@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/restaurant.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Wanderland</title>
+    <style>
+   .a{
+    background-color:#eee;
+    padding:5px;
+    margin:5px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+   }
+   .welpaper{
+    background-image:url(images/bg1.png);
+    width:100%;
+    height:500px;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed
+}
+
+    </style>
+</head>
+<body>
+     <!-- Spiner -->
+     <div class="landing">
+        <span class="loader"></span>
+    </div>
+    <!-- End -->
+    <!-- NavBar and Logo  -->
+    <header class="background" id="home">
+        <nav class="navbar navbar-expand-lg p-2 fixed-top">
+            <div class="container">
+                <img src="images/logo.png"  class="logo" alt="">
+                
+                <span class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa-solid fa-bars fs-3 text-white border-0"></span>
+                </span>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  mb-lg-0">
+                        <li class="nav-item">
+                            <a class="active nav-link me-3" categ="Pizza" aria-current="page" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3" aria-current="page" categ="Beef" href="#About">ABOUT</a>
+                        </li>
+                        <li class="nav-item  dropdown">
+                            <a class="nav-link me-3" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                DROPDOWN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item dropend">
+                                    <a class="nav-link me-3 dropdown-item" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        CATEGORY
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="nav-link me-3 dropdown-item" href="#Category">
+                                                MENUE
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="nav-link me-3 dropdown-item" href="#Fav">
+                                                FAVORITE
+                                            </a>
+                                        </li>
+                                        <li>
+                                           
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link me-3" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                CLIENTS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link me-3 dropdown-item" href="#Clients">
+                                        TESTIMONIALS
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="nav-link me-3 dropdown-item" href="#Reviwe">
+                                        REVIWE
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 " aria-current="page" categ="fish" href="#Contact">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content overflow-hidden">
+            <img src="images/logo.png"  class="wow slideInLeft" alt="">
+            <h1 class="text-white wow slideInRight">British Restaurant</h1>
+            <p class="text-white">We're the best restaurant in town.</p>
+            
+        </div>
+        </div>
+    </header>
+    <!-- End  -->
+
+    <!-- About Us  -->
+
+    <section id="About" class="mt-5 about">
+        <div class="container">
+            <div class="row overflow-hidden">
+                <div class="col-md-6 ">
+                    <div class="section-img">
+                        <img src="images/me.jpeg" loading="lazy" class="w-75 wow slideInLeft" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="about-text wow slideInRight">
+                        <h2 class="text-center"> <span class="text-warning fs-1">A</span>bout us</h2>
+                        <h3 class="text-black fs-1 pt-5">We’ve baked every item from the core of our heart to serve you
+                        </h3>
+                        <p class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam tenetur eum
+                            ad expedita commodi incidunt quod placeat harum, itaque repudiandae at esse possimus fugiat
+                            maiores ipsa doloribus, doloremque voluptatum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End  -->
+    <!-- Section welpaper -->
+    <section>
+        <div class="welpaper mb-5">
+        </div>
+    </section>
+    <!-- End -->
+    <!-- Category  Section with api   -->
+    <section id="Category" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="about-textt ">
+                        <h2 class="text-center my-5"> <span class="text-warning fs-1">M</span>enu</h2>
+                    </div>
+                    <ul class="nav nav-tabs justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs test  me-2" categ="Pizza" aria-current="page"
+                                href="#Pizza">Pizza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs test me-2" aria-current="page" categ="Beef"
+                                href="#Beef">Beef</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link nav-tabs test me-2" aria-current="page" categ="Pasta"
+                                href="#Pasta">Pasta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs test me-2" aria-current="page" categ="apple"
+                                href="#apple">apple</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-tabs test me-2" aria-current="page" categ="fish"
+                                href="#fish">fish</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5" id="myRow">
+
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content  p-0">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-1 ">
+                            <img src="images/restaurant.png" loading="lazy" class="w-100" alt="" id="myimage">
+                            <div>
+                                <p class="text-warning text-center fs-3">Ingredients</p>
+                                <ol id="list">
+                                </ol>
+                                <button class="btn btn-outline-dark w-100 my-1" data-bs-dismiss="modal"
+                                    aria-label="Close">Exit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End -->
+
+    <!-- Section favorite -->
+    <div class="container my-5">
+        <div class="about-textt">
+            <h2 class="text-center"> <span class="text-warning fs-1">F</span>avorites</h2>
+        </div>
+        <div class="row" id="Fav">
+
+        </div>
+    </div>
+    <!-- End -->
+
+
+    <!-- Section Clients -->
+    <section class="bg-light client-tstimonial my-5">
+        <div class="layerr">
+
+        </div>
+        <div class="container my-5 ">
+            <div class="row text-center py-5" id="Clients">
+                <div class="about-textt ">
+                    <h2 class="text-center text-white"> <span class="text-warning fs-1">T</span>estimonials</h2>
+                </div>
+                <div data-bs-ride="carousel" id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators ">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner py-5">
+                        <div class="carousel-item active">
+                            <div class="col  wow bounceInDown">
+                                <div class="slid ">
+                                    <img src="images/restaurant.png" loading="lazy" alt="">
+                                    <p class="text-white">Lorem Ipsum has been the industry's standard dummy text ever
+                                        since
+                                        the when an unknown printer took a galley of type <br> and scrambled it to make
+                                        a type specimen book.</p>
+                                    <h6 class="text-white">Alex Smith</h6>
+                                    <p class="aft pb-3 text-muted">Envato Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col">
+                                <div class="slid">
+                                    <img src="images/restaurant.png" loading="lazy" alt="">
+                                    <p class="text-white">Lorem Ipsum has been the industry's standard dummy text ever
+                                        since
+                                        the when an unknown printer took a galley of type <br> and scrambled it to make
+                                        a type specimen book.</p>
+                                    <h6 class="text-white">Alex Smith</h6>
+                                    <p class="aft pb-3 text-muted">Envato Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col  wow bounceInDown">
+                                <div class="slid">
+                                    <img src="images/restaurant.png" loading="lazy" alt="">
+                                    <p class="text-white">Lorem Ipsum has been the industry's standard dummy text ever
+                                        since
+                                        the when an unknown printer took a galley of type <br> and scrambled it to make
+                                        a type specimen book.</p>
+                                    <h6 class="text-white">Alex Smith</h6>
+                                    <p class="aft pb-3 text-muted">Envato Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End -->
+
+    <!-- Section Reviwe -->
+    <section class="icon my-5 py-5" id="Reviwe">
+        <div class="container">
+            <div class="row text-center pt-5 pb-3 overflow-hidden">
+                <div class="col-md-3 col-sm-12 wow fadeInLeft">
+                    <div class="icon-p">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p data-purecounter-start="0" data-purecounter-end="200" class="purecounter">200</p>
+                        <h6>HAPPY PEOPLE</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 wow fadeInRight">
+                    <div class="icon-p">
+                        <i class="fa-solid fa-book"></i>
+                        <p data-purecounter-start="0" data-purecounter-end="345" class="purecounter">345</p>
+                        <h6>CHEF RECIPE</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 wow fadeInLeft">
+                    <div class="icon-p">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <p data-purecounter-start="0" data-purecounter-end="1800" class="purecounter">1800</p>
+                        <h6>CUP OF COFFEE</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 wow fadeInRight">
+                    <div class="icon-p">
+                        <i class="fa-solid fa-trophy"></i>
+                        <p data-purecounter-start="0" data-purecounter-end="1200" class="purecounter">1200</p>
+                        <h6>BEST AWARDS</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Section Contact -->
+    <section id="Contact" class="bg-light">
+        <div class="container mt-5 ">
+            <div class="row text-center py-5 wow slideInLeft overflow-hidden">
+                <div class="about-textt ">
+                    <h2 class="text-center"> <span class="text-warning fs-1">C</span>ontact us</h2>
+                </div>
+            </div>
+            <div class="row text-center offset-md-1 overflow-hidden">
+                <div class="col-md-4 hov ">
+                    <div class="ii">
+                        <span class="icon-pp mb-3">
+                            <i class="fa-solid fa-location-arrow "></i>
+                        </span>
+                    </div>
+                    <h6>Address</h6>
+                    <p class="text-center">Egypt - Fayoum</p>
+                </div>
+                <div class="col-md-4 hov ">
+                    <div class="ii">
+                        <span class="icon-pp mb-3">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                    </div>
+                    <h6>Email</h6>
+                    <p class="text-center">paulaessam8@gmail.com</p>
+                </div>
+
+                <div class="col-md-4 hov ">
+                    <div class="ii">
+                        <span class="icon-pp mb-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                    </div>
+                    <h6>Phone</h6>
+                    <p class="text-center">+20 01014628698</p>
+                </div>
+            </div>
+            <div class="row py-5 hov overflow-hidden">
+                <div class="col-md-10 offset-md-1 col-sm-12 ">
+                    <div class="contact-us">
+                        <div class="in">
+                            <div class="box">
+                                <form>
+                                    <div class="mb-3 d-flex">
+                                        <input type="name" class="form-control  bg-light " id="name" placeholder="Name">
+                                        
+                                        <input type="email" class="form-control ms-3 bg-light " id="email"
+                                            placeholder="Email">
+                                        
+                                    </div>
+                                    <div class="mb-3">
+
+                                        <textarea class="form-control bg-light " placeholder="Message for me"
+                                            id="message" rows="5"></textarea>
+                                            <p class="alert alert-danger d-none"  id="alertmax" >hello , your message at most 20 char</p>
+                                 
+                                    </div>
+                                    <button id="btnsubmit" type="button" class="btn btn-outline-dark p-2 px-3" onclick="addvaild()">SEND
+                                        MESSAGE</button>
+                                        <p class="alert alert-success d-none mt-3" id="mesg">Your message is received and we will contact you  </p>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Footer -->
+
+    <footer class="bg-black p-4">
+        <div class="container ">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="social my-4">
+                        <ul class="ic-in">
+                            <li class="circil-in text-center wow bounceInDown"><i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                            <li class="circil-in text-center wow bounceInDown"><i class="fa-brands fa-instagram"></i>
+                            </li>
+                            <li class="circil-in text-center wow bounceInDown"><i class="fa-brands fa-twitter"></i></li>
+                        </ul>
+                    </div>
+                    <div class="foot text-white">
+                        <p>© Copyright Deniels. All Rights Reserved</p>
+                        <p>By Paula Essam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End -->
+
+
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/jquery-3.6.3.min.js"></script>
+     <script src="js/wow.min.js"></script>  
+     <script src="js/purecounter_vanilla.js"></script> 
+     <script src="js/java.js"></script> 
+</body>
+</html>
